@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+//THEME COLOURS
+$red: #950101;
+$dark-red: #3D0000;
+
+$primary: $red;
+$secondary: $dark-red;
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+//FONT MODIFICATIONS
+$font-family-sans-serif: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+//NAVBAR ICON MODIFICATION
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$white}' class='bi bi-list' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>");
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$black}' class='bi bi-list' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>");
+
+//MISC MODS
+$hr-border-width: 0px;
+
+@mixin screen-max($max) {
+  @media screen and (max-width: $max) {
+    @content;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-dynamic {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.btn-dynamic {
+  width: 25% !important;
+  @include screen-max(992px) {
+    width:50% !important;
+  }
+}
+
+.text-dynamic {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.text-dynamic-lg {
+  font-size: 3rem;
+  text-align: center;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  filter: drop-shadow(0 0 0.2rem rgba($black, 0.8));
+}
+
+.flex-bar {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  @include screen-max(992px) {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  @include screen-max(576px) {
+    width: 100vw;
+    justify-content: center;
+    margin: 0
+  }
+}
+
+//IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+a {
+  color: $primary;
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+a:hover {
+  color:rgba($primary, 0.8);
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: rgba($primary, 0.8) !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.divider {
+  border: none !important;
+}
+
+// .video-embed {
+//   --max-w: 1200px;
+//   --max-h: 675px;
+//   width: 75%;
+//   height: 75%;
+//   transform: scale(min(var(--max-w, 100%) / 100%, var(--max-h, 100%) / 100%));
+// }

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Fontawesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      type="text/css"
+    />
+    <!-- Bootstrap 5.2.2 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      type="text/css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styles/index.css" type="text/css" />
+    <!-- jQuery 3.6.1 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- Bootstrap 5.2.2 JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- SMTPJS -->
+    <script src="https://smtpjs.com/v3/smtp.js" type="text/javascript"></script>
+    <!--ScrollReveal plugin JS-->
+    <script
+      src="https://unpkg.com/scrollreveal"
+      type="text/javascript"
+    ></script>
+    <!-- Custom Scripts -->
+    <script src="assets/scripts/index.js" type="text/javascript"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-dark">
+    <!-- Navigation-->
+    <nav
+      id="mainNav"
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-flex justify-content-center"
+    >
+      <div class="container-fluid px-0">
+        <button
+          id="navbar-toggler-button"
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav flex-bar">
+            <li class="nav-item">
+              <a class="nav-link" href="#history">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#the-body-online">The Body Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#consumption">Consumption</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#having-a-body">Having a Body</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#embodiment-performance"
+                >Embodiment Performance</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead page-section">
+      <div class="container px-4 px-lg-5 h-100">
+        <div
+          class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-lg-8 align-self-end">
+            <h1 class="text-white font-weight-bold">
+              We are not up for <span class="text-primary">consumption</span>
+            </h1>
+            <hr class="divider" />
+          </div>
+          <div class="col-lg-8 align-self-baseline">
+            <a
+              class="btn btn-primary rounded-pill text-light fs-3 btn-dynamic"
+              href="#history"
+              >Enter</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="history" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#history"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#history"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#history"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div id="image-holder-1" class="image-holder"></div>
+        </div>
+        <div class="carousel-item">
+          <div id="image-holder-2" class="image-holder"></div>
+        </div>
+        <div class="carousel-item">
+          <div id="image-holder-3" class="image-holder"></div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#history"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#history"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="px-5 py-4 w-100 bg-dark">
+      <p class="text-light text-dynamic">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis
+        aliquam faucibus purus in. Ullamcorper malesuada proin libero nunc
+        consequat interdum varius sit amet. Lectus mauris ultrices eros in
+        cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis
+        mattis aliquam faucibus purus in. Ullamcorper malesuada proin libero
+        nunc consequat interdum varius sit amet. Lectus mauris ultrices eros in
+        cursus.
+      </p>
+    </div>
+    <section
+      id="the-body-online"
+      class="w-100 d-flex flex-column justify-content-center"
+      style="height: 100vh"
+    >
+      <div
+        style="width: 100%; height: 50vh"
+        class="d-flex justify-content-center align-items-center bg-dark"
+      >
+        <div
+          style="
+            height: 100%;
+            padding-bottom: 10%;
+            position: relative;
+            width: 100%;
+          "
+        >
+          <iframe
+            id="giphy-embed"
+            allowfullscreen=""
+            frameborder="0"
+            height="100%"
+            src="https://giphy.com/embed/HA8zxM1PVEz1JkbqMd/video"
+            style="left: 0; position: absolute; top: 0"
+            width="100%"
+          ></iframe>
+        </div>
+      </div>
+      <div class="px-5 py-4 w-100 bg-dark">
+        <p class="text-light text-dynamic">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis
+          mattis aliquam faucibus purus in. Ullamcorper malesuada proin libero
+          nunc consequat interdum varius sit amet. Lectus mauris ultrices eros
+          in cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lobortis mattis aliquam faucibus purus in. Ullamcorper malesuada proin
+          libero nunc consequat interdum varius sit amet. Lectus mauris ultrices
+          eros in cursus.
+        </p>
+      </div>
+    </section>
+    <section id="consumption">
+      <div class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+          <div
+            class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
+          >
+            <div class="col-lg-8 align-self-end">
+              <h1 class="text-white font-weight-bold">
+                What does it feel like to be
+                <span class="text-primary">consumed</span>?
+              </h1>
+              <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+              <button
+                class="btn btn-primary rounded-pill text-light fs-3 btn-dynamic"
+                data-bs-toggle="modal"
+                data-bs-target="#consumption-modal"
+              >
+                Click Here
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="consumption-modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h5 class="modal-title text-light" id="exampleModalLabel">
+                What does it feel like to be consumed?
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body d-flex justify-content-around">
+              <div
+                id="collage-container"
+                class="bg-secondary consumption-container"
+              ></div>
+              <div id="" class="bg-primary consumption-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="having-a-body"
+      class="w-100 d-flex flex-column justify-content-center"
+      style="height: 100vh"
+    >
+      <div
+        style="width: 100%; height: 50vh"
+        class="d-flex justify-content-center align-items-center bg-dark"
+      >
+        <div
+          style="
+            height: 100%;
+            padding-bottom: 10%;
+            position: relative;
+            width: 100%;
+          "
+        >
+          <iframe
+            id="giphy-embed"
+            allowfullscreen=""
+            frameborder="0"
+            height="100%"
+            src="https://giphy.com/embed/HA8zxM1PVEz1JkbqMd/video"
+            style="left: 0; position: absolute; top: 0"
+            width="100%"
+          ></iframe>
+        </div>
+      </div>
+      <div class="px-5 py-4 w-100 bg-dark">
+        <p class="text-light text-dynamic">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis
+          mattis aliquam faucibus purus in. Ullamcorper malesuada proin libero
+          nunc consequat interdum varius sit amet. Lectus mauris ultrices eros
+          in cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lobortis mattis aliquam faucibus purus in. Ullamcorper malesuada proin
+          libero nunc consequat interdum varius sit amet. Lectus mauris ultrices
+          eros in cursus.
+        </p>
+      </div>
+    </section>
+    <section
+      id="embodiment-performance"
+      class="w-100 d-flex flex-column justify-content-center align-items-center"
+      style="height: 100vh"
+    >
+      <iframe
+        class="video-embed"
+        src="https://www.youtube-nocookie.com/embed/VPvVD8t02U8?enablejsapi=1&modestbranding=1&iv_load_policy=3"
+        frameborder="0"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+        allowfullscreen
+      ></iframe>
+    </section>
+  </body>
+</html>

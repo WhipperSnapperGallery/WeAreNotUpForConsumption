@@ -1,0 +1,22 @@
+{
+  "name": "yas",
+  "version": "1.0.0",
+  "description": "WhipperSnapper Gallery project for Yas",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass scss:assets/styles"
+  },
+  "keywords": [
+    "yas",
+    "consumption",
+    "not-up-for-consumption"
+  ],
+  "author": "Omar Musleh",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
